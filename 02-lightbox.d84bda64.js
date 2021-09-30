@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"cbZI":[function(require,module,exports) {
 "use strict";var e=require("./gallery-items.js");console.log(e.galleryItems);
 },{"./gallery-items.js":"q5Rn"}]},{},["cbZI"], null)
-//# sourceMappingURL=/anjtka333/02-lightbox.d84bda64.js.map
+//# sourceMappingURL=/goit-js-hw-08/02-lightbox.d84bda64.js.map
