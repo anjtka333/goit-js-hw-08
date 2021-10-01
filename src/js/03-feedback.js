@@ -5,9 +5,9 @@ const email = document.querySelector('input[type="email"]');
 const massage = document.querySelector('textarea[name="message"]');
 const form = document.querySelector('.feedback-form');
 
-// let savedObjfromLocalStore =
-//   localStorage.getItem('feedback-form-state') || '{"email":"", "massage":""}';
-let savedObjfromLocalStore = localStorage.getItem('feedback-form-state');
+let savedObjfromLocalStore =
+  localStorage.getItem('feedback-form-state') || '{"email":"", "massage":""}';
+// let savedObjfromLocalStore = localStorage.getItem('feedback-form-state');
 const isJson = str => {
   try {
     JSON.parse(str);
@@ -16,11 +16,12 @@ const isJson = str => {
     return false;
   }
 };
-if (isJson(savedObjfromLocalStore)) {
-  savedObjfromLocalStore = JSON.parse(savedObjfromLocalStore);
-  email.value = savedObjfromLocalStore.email;
-  massage.value = savedObjfromLocalStore.massage;
-}
+// if (isJson(savedObjfromLocalStore) {
+//   savedObjfromLocalStore = JSON.parse(savedObjfromLocalStore);
+//   console.log(savedObjfromLocalStore.email);
+//   email.value = savedObjfromLocalStore.email;
+//   massage.value = savedObjfromLocalStore.massage;
+// }
 
 form.addEventListener(
   'input',
