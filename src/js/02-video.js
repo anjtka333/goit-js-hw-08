@@ -13,10 +13,10 @@ player.getVideoTitle().then(function (title) {
 
 player.on(
   'timeupdate',
-  throttle(function (data) {
+  throttle(function ({ seconds }) {
     // data is an object containing properties specific to that event
-    console.log(data);
-    localStorage.setItem('videoplayer - current - time', data.seconds);
+
+    localStorage.setItem('videoplayer - current - time', seconds);
   }, 1000),
 );
 console.log(localStorage.getItem('videoplayer - current - time'));
